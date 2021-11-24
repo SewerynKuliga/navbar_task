@@ -1,13 +1,15 @@
 window.onload = () => {
-  let leftMenu = document.querySelector(".left_menu");
-  let buttonFields = document.querySelectorAll(".button_field");
-  let showMoreInfo = document.querySelector(".show_more");
-  let showLessInfo = document.querySelector(".show_less");
-  let logo = document.querySelector(".logo");
-  let spans = document.querySelectorAll(".spans");
-  let toExpandButtons = document.querySelector(".expand_collapse_menu");
-  var accordion = document.getElementsByClassName("accordion");
-  let accPanel = document.querySelectorAll(".panel");
+  const leftMenu = document.querySelector(".left_menu");
+  const buttonFields = document.querySelectorAll(".button_field");
+  const showMoreInfo = document.querySelector(".show_more");
+  const showLessInfo = document.querySelector(".show_less");
+  const logo = document.querySelector(".logo");
+  const spans = document.querySelectorAll(".spans");
+  const toExpandButtons = document.querySelector(".expand_collapse_menu");
+  const accordion = document.getElementsByClassName("accordion");
+  const accPanel = document.querySelectorAll(".panel");
+  const rollUpPanel = document.querySelectorAll(".roll_up_panel");
+  const expandPanel = document.querySelectorAll(".expand_panel");
   var i;
 
   // This function expands the panel
@@ -17,7 +19,7 @@ window.onload = () => {
     showMoreInfo.style.display = "none";
     buttonFields.forEach((button) => (button.style.display = "flex"));
     buttonFields.forEach((button) => (button.style.height = "35px"));
-    spans.forEach((span) => (span.style.display = "inline"));
+    spans.forEach((span) => (span.style.display = "flex"));
   }
 
   // This function collapses the navbar
@@ -33,12 +35,10 @@ window.onload = () => {
   showMoreInfo.addEventListener("click", showMore);
   showLessInfo.addEventListener("click", showLess);
 
-
   for (i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function () {
       // Toggle between adding and removing the "active" class, to highlight the button that controls the panel
       this.classList.toggle("active");
-
       // Toggle between hiding and showing the active panel
       if (leftMenu.style.width === "300px") {
         let panel = this.nextElementSibling;
@@ -46,9 +46,9 @@ window.onload = () => {
           panel.style.display = "none";
         } else {
           panel.style.display = "block";
+          panel.style.color = "blue";
         }
       }
     });
-    }
-  
+  }
 };

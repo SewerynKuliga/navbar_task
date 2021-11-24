@@ -1,4 +1,6 @@
-/* @import url(reset.css); */
+* {
+  margin: 0;
+}
 
 html {
   font-family: "Open Sans", sans-serif;
@@ -24,6 +26,12 @@ html {
   display: none;
   padding-left: 10px;
   font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+}
+.spans > img {
+  margin-left: 5px;
+  width: 20px;
 }
 
 /* .left_menu:hover {
@@ -65,7 +73,7 @@ html {
   height: auto;
   width: auto;
   display: block;
-  margin: 5px 0px;
+  margin-top: 10px;
   padding: 10px;
   border-radius: 10px;
   align-items: center;
@@ -79,7 +87,7 @@ html {
 .button_field:hover {
   background-color: gray;
 }
-.button_field:active {
+.button_field::after {
   background-color: rgba(174, 206, 255, 1);
   color: rgb(0, 100, 239);
 }
@@ -103,7 +111,6 @@ html {
 
 .accordion {
   background-color: #eee;
-  color: #444;
   border: none;
   transition: 0.2s;
 }
@@ -124,4 +131,11 @@ html {
 
 .panel_item:hover {
   text-decoration: underline;
+}
+
+.roll_up_panel {
+  display: none;
+}
+.expand_panel {
+  display: none;
 }
