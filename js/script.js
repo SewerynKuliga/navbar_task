@@ -46,7 +46,6 @@ window.onload = () => {
           panel.style.display = "none";
         } else {
           panel.style.display = "block";
-          panel.style.color = "blue";
         }
       }
     });
