@@ -7,7 +7,7 @@
     
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" async></script>  
-    <title>Menu</title>
+    <title>Navbar</title>
 </head>
 <body>
     <div class="left_menu">
@@ -27,14 +27,29 @@
                 <img src="Icons/Konfiguracja.PNG" alt="Configuration icon" />
                 <span class="spans">Konfiguracja</span>
             </div>
-            <div class="button_field">
+
+            <div class="button_field accordion">
                 <img src="Icons/ModeracjaOpinii.PNG" alt="Opinion moderation icon" />
                 <span class="spans">Moderacja Opinii</span>
             </div>
-            <div class="button_field">
+            <div class="panel">
+                <ul class="pannel_list">
+                    <li class="panel_item">Ogólna</li>
+                    <li class="panel_item">Produktowa</li>
+                </ul>
+            </div>
+
+            <div class="button_field accordion">
                 <img src="Icons/Platnosci.PNG" alt="Payment icon" />
                 <span class="spans">Płatności</span>
             </div>
+            <div class="panel">
+                <ul class="panel_list">
+                    <li class="panel_item">Opłać teraz</li>
+                    <li class="panel_item">Zaplanuj opłatę</li>
+                </ul>
+            </div>
+
             <div class="button_field">
                 <img src="Icons/Q&A.PNG" alt="Q&A icon" />
                 <span class="spans">Q&A</span>
@@ -51,10 +66,19 @@
                 <img src="Icons/Newsletter.PNG" alt="Newsletter icon" />
                 <span class="spans">Newsletter</span>
             </div>
-            <div class="button_field" id="aa">
+
+            <div class="button_field accordion" id="aa">
                 <img src="Icons/Narzedzia.PNG" alt="Settings icon" />
                 <span class="spans">Narzędzia</span>
             </div>
+            <div class="panel">
+                <ul class="pannel_list">
+                    <li class="panel_item">Młotek</li>
+                    <li class="panel_item">Śrubokręt</li>
+                    <li class="panel_item">Żabka</li>
+                </ul>
+            </div>
+
             <div class="button_field" id="aa">
                 <img src="Icons/FAQ.PNG" alt="FAQ icon" />
                 <span class="spans">FAQ</span>

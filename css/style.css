@@ -2,15 +2,21 @@
 
 html {
   font-family: "Open Sans", sans-serif;
+  height: 100%;
 }
 
 .left_menu {
-  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
   width: 50px;
-  height: auto;
+  height: 100%;
+  min-height: 97vh;
   padding: 20px;
   background-color: #fff;
-  border: 1px solid black;
+  box-shadow: 10px 5px 20px black;
   text-align: center;
 }
 
@@ -34,6 +40,7 @@ html {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 50px;
   font-family: "Outfit", sans-serif;
 }
@@ -49,6 +56,7 @@ html {
 
 .icons {
   display: block;
+  position: relative;
   text-align: center;
   align-items: center;
 }
@@ -63,27 +71,57 @@ html {
   align-items: center;
   text-align: center;
   cursor: pointer;
+  outline: none;
 }
-
+.button_field > img {
+  width: 30px;
+}
 .button_field:hover {
   background-color: gray;
 }
-.button_field:focus-within {
+.button_field:active {
   background-color: rgba(174, 206, 255, 1);
   color: rgb(0, 100, 239);
 }
 
-.icons > div > img {
-  width: 30px;
-}
 .expand_collapse_menu {
+  position: relative;
+  width: auto;
+  height: auto;
   display: flex;
-  bottom: 0;
+  margin-top: auto;
   justify-content: space-between;
-  text-align: center;
   align-items: center;
 }
 .expand_collapse_menu > img {
-  display: flex;
   width: 50px;
+}
+
+.show_less {
+  display: none;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  border: none;
+  transition: 0.2s;
+}
+
+.panel {
+  padding: 0 18px;
+  text-align: left;
+  display: none;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.panel_item {
+  padding: 10px 0px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.panel_item:hover {
+  text-decoration: underline;
 }
