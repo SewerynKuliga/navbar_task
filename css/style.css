@@ -29,21 +29,6 @@ html {
   font-size: 20px;
   align-items: center;
 }
-.spans > img {
-  margin-left: 5px;
-  width: 20px;
-}
-
-/* .left_menu:hover {
-  width: 200px;
-} */
-
-/* .left_menu:hover .button_field {
-  display: flex;
-} */
-/* .left_menu:hover .logo {
-  display: flex;
-} */
 
 .logo {
   display: flex;
