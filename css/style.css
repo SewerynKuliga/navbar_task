@@ -1,0 +1,89 @@
+/* @import url(reset.css); */
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.left_menu {
+  display: block;
+  width: 50px;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.spans {
+  display: none;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+/* .left_menu:hover {
+  width: 200px;
+} */
+
+/* .left_menu:hover .button_field {
+  display: flex;
+} */
+/* .left_menu:hover .logo {
+  display: flex;
+} */
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  font-family: "Outfit", sans-serif;
+}
+
+.logo_icon {
+  width: 50px;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.icons {
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+
+.button_field {
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 5px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button_field:hover {
+  background-color: gray;
+}
+.button_field:focus-within {
+  background-color: rgba(174, 206, 255, 1);
+  color: rgb(0, 100, 239);
+}
+
+.icons > div > img {
+  width: 30px;
+}
+.expand_collapse_menu {
+  display: flex;
+  bottom: 0;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.expand_collapse_menu > img {
+  display: flex;
+  width: 50px;
+}
